@@ -25,6 +25,14 @@ else
     echo "Firewall is not active, skipping SSH firewall configuration."
 fi
 
+# Install Oh My Bash
+echo "Installing Oh My Bash..."
+bash -c "$(curl -fsSL https://raw.githubusercontent.com/ohmybash/oh-my-bash/master/tools/install.sh)"
+
+# Source the bashrc file to apply Oh My Bash settings
+echo "Sourcing .bashrc to apply Oh My Bash settings..."
+source ~/.bashrc
+
 # Display SSH service status
 echo "SSH service status:"
 sudo systemctl status ssh --no-pager
