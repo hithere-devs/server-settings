@@ -1,0 +1,6 @@
+fzf
+fd
+bat
+eza
+thefuck
+zoxide
